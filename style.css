@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color:#f67280;
+    padding: 15px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #555;
+  }
+  
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+  }
+
+
+header {
+    /* background-color: #f67280; */
+    opacity: 90%;
+    color: black;
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 10px;
+  }
+  
+  header h1 {
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 18px;
+  }
+  
+  .info-section {
+    background-color: white;
+    padding: 50px 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .info-section p {
+    color: #666;
+  }
+  
+  .info-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .info-section li {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color:#f67280;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide the nav links on smaller screens */
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 70px; /* Height of the navbar */
+      left: 0;
+      background-color:#f67280;
+      padding: 20px;
+      box-sizing: border-box;
+      z-index: 1;
+    }
+  
+    .nav-links.open {
+      display: flex; /* Show the nav links when .open is applied */
+    }
+  
+    .nav-links li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .nav-links li a {
+      padding: 10px 0;
+      display: block;
+      border-bottom: 1px solid #666;
+    }
+  
+    .nav-links li a:hover {
+      background-color: #555;
+      border-bottom: 1px solid #555;
+    }
+  
+    .hamburger-menu {
+      display: block; /* Show the hamburger menu icon */
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 2;
+    }
+  
+    .change .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .change .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .change .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+  
