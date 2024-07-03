@@ -56,8 +56,10 @@ body {
     background-color: white;
     margin: 5px 0;
     transition: transform 0.3s ease;
-  }
 
+  }
+  
+/* main-contain */
 
 header {
     /* background-color: #f67280; */
@@ -136,7 +138,7 @@ header {
     .nav-links li a {
       padding: 10px 0;
       display: block;
-      border-bottom: 1px solid #666;
+      border-bottom: 1px solid;
     }
   
     .nav-links li a:hover {
